@@ -86,23 +86,6 @@
 
 ---
 
-### 🛠️ Tech Stack (Grounded in Repository Activity)
-
-<div align="center">
-
-| Category | Technologies |
-| :--- | :--- |
-| **Languages** | `TypeScript` (49.0%) · `Python` (29.7%) · `JavaScript` (7.4%) · `HTML/CSS` (13.6%) · `SQL` |
-| **Frontend** | `React 18` · `Next.js` · `Tailwind CSS v4` · `Vite` · `Radix UI` · `Responsive UI` |
-| **Backend & APIs** | `Node.js` · `FastAPI` · `Hono` · `Express.js` · `RESTful APIs` |
-| **Databases & ORM** | `PostgreSQL` · `Prisma ORM` · `MongoDB` · `Supabase` |
-| **AI & Automation** | `Google Gemini API` · `Document AI & OCR` · `Autonomous Interventions` · `Prompt Eng` |
-| **DevOps & Cloud** | `Docker` · `Git & GitHub Actions` · `Vercel` · `Vite` · `Postman` |
-
-</div>
-
----
-
 ### 📊 GitHub Activity & Insights
 
 <div align="center">
