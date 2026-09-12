@@ -29,7 +29,6 @@
 - 🔭 **Currently Building**: Scalable AI-native platforms solving real-world citizen & business problems.
 - 💡 **Core Expertise**: LLM integrations (Gemini / OpenAI), TypeScript/React web apps, Python backend microservices, and automated document processing pipelines.
 - 📍 **Based in**: Gwalior, Madhya Pradesh, India
-- 📬 **Reach out**: [khushboocodes@gmail.com](mailto:khushboocodes@gmail.com)
 
 ---
 
