@@ -90,8 +90,8 @@
 
 <div align="center">
   <a href="https://github.com/khushboocodes">
-    <img height="165em" src="https://github-readme-stats.vercel.app/api?username=khushboocodes&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&bg_color=0B1120&title_color=22D3EE&icon_color=7C3AED&text_color=E5E7EB" alt="Khushboo's GitHub Stats" />
-    <img height="165em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=khushboocodes&layout=compact&theme=tokyonight&hide_border=true&bg_color=0B1120&title_color=22D3EE&text_color=E5E7EB" alt="Top Languages" />
+    <img height="165em" src="https://github-stats-extended.vercel.app/api?username=khushboocodes&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&bg_color=0B1120&title_color=22D3EE&icon_color=7C3AED&text_color=E5E7EB" alt="Khushboo's GitHub Stats" />
+    <img height="165em" src="https://github-stats-extended.vercel.app/api/top-langs/?username=khushboocodes&layout=compact&theme=tokyonight&hide_border=true&bg_color=0B1120&title_color=22D3EE&text_color=E5E7EB" alt="Top Languages" />
   </a>
   <br/>
   <a href="https://github.com/khushboocodes">
