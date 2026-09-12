@@ -86,14 +86,9 @@
 
 ---
 
-### 📊 GitHub Activity & Insights
+### 📊 GitHub Activity & Streak
 
 <div align="center">
-  <a href="https://github.com/khushboocodes">
-    <img height="165em" src="https://github-stats-extended.vercel.app/api?username=khushboocodes&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&bg_color=0B1120&title_color=22D3EE&icon_color=7C3AED&text_color=E5E7EB" alt="Khushboo's GitHub Stats" />
-    <img height="165em" src="https://github-stats-extended.vercel.app/api/top-langs/?username=khushboocodes&layout=compact&theme=tokyonight&hide_border=true&bg_color=0B1120&title_color=22D3EE&text_color=E5E7EB" alt="Top Languages" />
-  </a>
-  <br/>
   <a href="https://github.com/khushboocodes">
     <img src="https://github-readme-streak-stats.herokuapp.com/?user=khushboocodes&theme=tokyonight&hide_border=true&background=0B1120&ring=7C3AED&fire=22D3EE&currStreakLabel=22D3EE" alt="GitHub Streak" />
   </a>
