@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khushboo Khator (@khushboocodes) - GitHub Profile Preview</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --card-bg: #161b22;
+      --border: #30363d;
+      --text: #c9d1d9;
+      --heading: #f0f6fc;
+      --link: #58a6ff;
+      --btn-bg: #21262d;
+      --btn-border: #363b42;
+    }
+    body.light-theme {
+      --bg: #f6f8fa;
+      --card-bg: #ffffff;
+      --border: #d0d7de;
+      --text: #24292f;
+      --heading: #1f2328;
+      --link: #0969da;
+      --btn-bg: #f3f4f6;
+      --btn-border: #d0d7de;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      padding-bottom: 60px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    /* GitHub top navbar mockup */
+    header {
+      background: #010409;
+      border-bottom: 1px solid var(--border);
+      padding: 12px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .gh-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: #fff;
+      font-weight: 600;
+      font-size: 14px;
+      text-decoration: none;
+    }
+    .gh-logo svg { fill: #fff; }
+    .theme-toggle-btn {
+      background: var(--btn-bg);
+      border: 1px solid var(--btn-border);
+      color: var(--text);
+      padding: 6px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s;
+    }
+    .theme-toggle-btn:hover {
+      border-color: #8b949e;
+    }
+
+    /* Main profile layout */
+    .container {
+      max-width: 1280px;
+      margin: 32px auto;
+      padding: 0 24px;
+      display: grid;
+      grid-template-columns: 296px 1fr;
+      gap: 32px;
+    }
+    @media (max-width: 900px) {
+      .container { grid-template-columns: 1fr; }
+    }
+
+    /* Left profile sidebar */
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .avatar-wrapper {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .avatar-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .name-block h1 {
+      font-size: 24px;
+      font-weight: 600;
+      color: var(--heading);
+      line-height: 1.25;
+    }
+    .name-block .username {
+      font-size: 18px;
+      color: #8b949e;
+      font-weight: 300;
+    }
+    .follow-btn {
+      width: 100%;
+      background: var(--btn-bg);
+      border: 1px solid var(--btn-border);
+      color: var(--text);
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+      text-align: center;
+    }
+    .meta-list {
+      list-style: none;
+      font-size: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .meta-list li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--text);
+    }
+
+    /* Main README section */
+    .readme-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .readme-header {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--border);
+      padding: 10px 16px;
+      font-size: 13px;
+      font-family: monospace;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .readme-header span {
+      color: #8b949e;
+    }
+    .readme-body {
+      padding: 24px;
+    }
+    .svg-container {
+      width: 100%;
+      margin-bottom: 24px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    }
+    .svg-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Markdown styling */
+    .prose h3 {
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--heading);
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+      margin: 28px 0 16px;
+    }
+    .prose blockquote {
+      border-left: 4px solid #7C3AED;
+      padding: 8px 16px;
+      background: var(--card-bg);
+      border-radius: 0 8px 8px 0;
+      margin-bottom: 16px;
+      color: var(--text);
+    }
+    .prose ul {
+      margin-left: 20px;
+      margin-bottom: 16px;
+    }
+    .prose li {
+      margin-bottom: 6px;
+    }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 16px;
+    }
+    @media (max-width: 768px) {
+      .projects-grid { grid-template-columns: 1fr; }
+    }
+    .project-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px;
+    }
+    .project-card h4 {
+      font-size: 16px;
+      color: var(--link);
+      margin-bottom: 6px;
+    }
+    .project-card p {
+      font-size: 13px;
+      color: var(--text);
+      margin-bottom: 10px;
+    }
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .badges img {
+      height: 20px;
+    }
+    .stats-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin: 20px 0;
+    }
+    .stats-row img {
+      max-width: 100%;
+      height: auto;
+    }
+    .notice-bar {
+      background: linear-gradient(90deg, #7C3AED 0%, #22D3EE 100%);
+      color: #fff;
+      padding: 8px 16px;
+      text-align: center;
+      font-size: 13px;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="notice-bar">
+    ✨ Live Profile Preview: Khushboo Khator (<b>@khushboocodes</b>) &bull; Cyberpunk Terminal &amp; Animated Jet Heatmap
+  </div>
+
+  <header>
+    <a href="#" class="gh-logo">
+      <svg height="32" viewBox="0 0 16 16" width="32">
+        <path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path>
+      </svg>
+      <span>GitHub Profile Preview</span>
+    </a>
+    <button class="theme-toggle-btn" id="themeToggle" onclick="toggleTheme()">
+      <span id="themeIcon">☀️</span> Switch to Light Mode
+    </button>
+  </header>
+
+  <div class="container">
+    <!-- Left Sidebar -->
+    <aside class="sidebar">
+      <div class="avatar-wrapper">
+        <img src="avatar.png" alt="Khushboo Khator" />
+      </div>
+      <div class="name-block">
+        <h1>Khushboo Khator</h1>
+        <div class="username">khushboocodes</div>
+      </div>
+      <button class="follow-btn">Follow</button>
+      <ul class="meta-list">
+        <li>📍 Gwalior, Madhya Pradesh, India</li>
+        <li>✉️ <a href="mailto:khushboocodes@gmail.com" style="color:var(--link); text-decoration:none;">khushboocodes@gmail.com</a></li>
+        <li>🔗 <a href="https://www.linkedin.com/in/khushboo-khator-838aa82a0/" target="_blank" style="color:var(--link); text-decoration:none;">LinkedIn Profile</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Profile Content -->
+    <main>
+      <div class="readme-card">
+        <div class="readme-header">
+          <div>khushboocodes <span>/ README.md</span></div>
+          <span style="font-size:11px; opacity:0.7;">Preview Mode</span>
+        </div>
+        <div class="readme-body">
+          
+          <!-- Cyberpunk Terminal Card -->
+          <div class="svg-container">
+            <img id="terminalBanner" src="dark.svg" alt="Cyberpunk Terminal Card - Khushboo Khator" />
+          </div>
+
+          <!-- Arcade Jet Heatmap -->
+          <div class="svg-container" style="background:#0d1117; padding: 8px; border: 1px solid var(--border);">
+            <div style="font-size:11px; font-family:monospace; color:#8b949e; margin-bottom:6px; text-align:center;">
+              🎮 LIVE ARCADE CONTRIBUTION HEATMAP &bull; 34 WEEKS &bull; REAL DATA
+            </div>
+            <img src="dist/github-jet.svg" alt="GitHub Jet Contribution Heatmap" />
+          </div>
+
+          <!-- Markdown Body -->
+          <div class="prose">
+            <h3>⚡ About Me</h3>
+            <blockquote>
+              <strong>AI Engineer &amp; Full-Stack Developer</strong> building intelligent, production-grade applications that turn raw data into high-impact systems. Focused on AI agent workflows, multilingual document intelligence, SaaS architecture, and resilient distributed services.
+            </blockquote>
+            <ul>
+              <li>🔭 <strong>Currently Building</strong>: Scalable AI-native platforms solving real-world citizen &amp; business problems.</li>
+              <li>💡 <strong>Core Expertise</strong>: LLM integrations (Gemini / Claude / OpenAI), TypeScript/React web apps, Python backend microservices, and automated document processing pipelines.</li>
+              <li>📍 <strong>Based in</strong>: Gwalior, Madhya Pradesh, India</li>
+              <li>📬 <strong>Reach out</strong>: <a href="mailto:khushboocodes@gmail.com" style="color:var(--link);">khushboocodes@gmail.com</a></li>
+            </ul>
+
+            <h3>🚀 Featured Projects</h3>
+            <div class="projects-grid">
+              <div class="project-card">
+                <h4>🇮🇳 Nivaran</h4>
+                <p>Citizen Grievance &amp; National Demand Intelligence. AI-driven multilingual feedback analysis for MPs to prioritize regional development projects.</p>
+                <div class="badges">
+                  <span style="background:#1e3a8a; color:#fff; font-size:11px; padding:2px 8px; border-radius:4px;">Gemini 2.5 Flash</span>
+                  <span style="background:#1e40af; color:#fff; font-size:11px; padding:2px 8px; border-radius:4px;">TypeScript</span>
+                  <span style="background:#0284c7; color:#fff; font-size:11px; padding:2px 8px; border-radius:4px;">React 18</span>
+                  <span style="background:#ea580c; color:#fff; font-size:11px; padding:2px 8px; border-radius:4px;">Hono</span>
+                  <span style="background:#1e3a8a; color:#fff; font-size:11px; padding:2px 8px; border-radius:4px;">Postgres</span>
+                </div>
+              </div>
+
+              <div class="project-card">
+                <h4>💸 Recoup</h4>
+                <p>Autonomous Revenue Recovery Engine. Diagnoses churn causes, picks optimal low-cost interventions, and proves ROI against untouched control groups.</p>
+                <div class="badges">
+                  <span style="background:#0369a1; color:#fff; font-size:11px; padding:2px 8px; border-radius:4px;">Python</span>
+                  <span style="background:#6b21a8; color:#fff; font-size:11px; padding:2px 8px; border-radius:4px;">AI Automation</span>
+                  <span style="background:#047857; color:#fff; font-size:11px; padding:2px 8px; border-radius:4px;">Analytics</span>
+                </div>
+              </div>
+
+              <div class="project-card">
+                <h4>⚡ StartupOps</h4>
+                <p>Desktop-First SaaS Platform for early-stage startups consolidating team metrics, execution roadmaps, and sprint health.</p>
+                <div class="badges">
+                  <span style="background:#1e40af; color:#fff; font-size:11px; padding:2px 8px; border-radius:4px;">TypeScript</span>
+                  <span style="background:#0284c7; color:#fff; font-size:11px; padding:2px 8px; border-radius:4px;">React</span>
+                  <span style="background:#0e7490; color:#fff; font-size:11px; padding:2px 8px; border-radius:4px;">Tailwind CSS</span>
+                </div>
+              </div>
+
+              <div class="project-card">
+                <h4>📄 InvoiceFlow</h4>
+                <p>High-accuracy AI document extraction pipeline converting tractor loan invoices and quotation documents into structured tabular data.</p>
+                <div class="badges">
+                  <span style="background:#0369a1; color:#fff; font-size:11px; padding:2px 8px; border-radius:4px;">Python</span>
+                  <span style="background:#b45309; color:#fff; font-size:11px; padding:2px 8px; border-radius:4px;">OCR / NLP</span>
+                  <span style="background:#0f766e; color:#fff; font-size:11px; padding:2px 8px; border-radius:4px;">FastAPI</span>
+                </div>
+              </div>
+            </div>
+
+            <h3>🛠️ Tech Stack (Grounded in Repository Activity)</h3>
+            <div class="projects-grid" style="grid-template-columns: 1fr; margin-bottom: 20px;">
+              <div class="project-card">
+                <p><strong>Languages:</strong> <code>TypeScript (49.0%)</code> &bull; <code>Python (29.7%)</code> &bull; <code>JavaScript (7.4%)</code> &bull; <code>HTML/CSS (13.6%)</code> &bull; <code>SQL</code></p>
+                <p><strong>Frontend:</strong> <code>React 18</code> &bull; <code>Next.js</code> &bull; <code>Tailwind CSS v4</code> &bull; <code>Vite</code> &bull; <code>Radix UI</code></p>
+                <p><strong>Backend:</strong> <code>Node.js</code> &bull; <code>FastAPI</code> &bull; <code>Hono</code> &bull; <code>Express.js</code> &bull; <code>REST APIs</code></p>
+                <p><strong>Databases:</strong> <code>PostgreSQL</code> &bull; <code>Prisma ORM</code> &bull; <code>MongoDB</code> &bull; <code>Supabase</code></p>
+                <p><strong>AI Stack:</strong> <code>Google Gemini API</code> &bull; <code>Document AI &amp; OCR</code> &bull; <code>Autonomous Interventions</code> &bull; <code>Agent Workflows</code></p>
+              </div>
+            </div>
+
+            <h3>📊 Live GitHub Stats &amp; Streak</h3>
+            <div class="stats-row">
+              <img src="https://github-readme-stats.vercel.app/api?username=khushboocodes&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&bg_color=0B1120&title_color=22D3EE&icon_color=7C3AED&text_color=E5E7EB" alt="Stats" />
+              <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=khushboocodes&layout=compact&theme=tokyonight&hide_border=true&bg_color=0B1120&title_color=22D3EE&text_color=E5E7EB" alt="Top Languages" />
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    let isDark = true;
+    function toggleTheme() {
+      isDark = !isDark;
+      const banner = document.getElementById('terminalBanner');
+      const btn = document.getElementById('themeToggle');
+      const icon = document.getElementById('themeIcon');
+
+      if (isDark) {
+        document.body.classList.remove('light-theme');
+        banner.src = 'dark.svg';
+        btn.innerHTML = '<span id="themeIcon">☀️</span> Switch to Light Mode';
+      } else {
+        document.body.classList.add('light-theme');
+        banner.src = 'light.svg';
+        btn.innerHTML = '<span id="themeIcon">🌙</span> Switch to Dark Mode';
+      }
+    }
+  </script>
+</body>
+</html>

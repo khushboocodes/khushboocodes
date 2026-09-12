@@ -27,7 +27,7 @@
 > **AI Engineer & Full-Stack Developer** building intelligent, production-grade applications that turn raw data into high-impact systems. Focused on AI agent workflows, multilingual document intelligence, SaaS architecture, and resilient distributed services.
 
 - 🔭 **Currently Building**: Scalable AI-native platforms solving real-world citizen & business problems.
-- 💡 **Core Expertise**: LLM integrations (Gemini / Claude / OpenAI), TypeScript/React web apps, Python backend microservices, and automated document processing pipelines.
+- 💡 **Core Expertise**: LLM integrations (Gemini / OpenAI), TypeScript/React web apps, Python backend microservices, and automated document processing pipelines.
 - 📍 **Based in**: Gwalior, Madhya Pradesh, India
 - 📬 **Reach out**: [khushboocodes@gmail.com](mailto:khushboocodes@gmail.com)
 
@@ -44,7 +44,7 @@
       <p>
         <img src="https://img.shields.io/badge/Gemini_2.5_Flash-4285F4?style=flat-square&logo=googlegemini&logoColor=white" />
         <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
-        <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" />
+        <img src="https://img.shields.io/badge/React_18-61DAFB?style=flat-square&logo=react&logoColor=black" />
         <img src="https://img.shields.io/badge/Hono-E36002?style=flat-square&logo=hono&logoColor=white" />
         <img src="https://img.shields.io/badge/Postgres-4169E1?style=flat-square&logo=postgresql&logoColor=white" />
       </p>
@@ -68,7 +68,7 @@
       <p>
         <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
         <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" />
-        <img src="https://img.shields.io/badge/Tailwind-38BDF8?style=flat-square&logo=tailwindcss&logoColor=white" />
+        <img src="https://img.shields.io/badge/Tailwind_CSS-38BDF8?style=flat-square&logo=tailwindcss&logoColor=white" />
       </p>
     </td>
     <td width="50%" valign="top">
@@ -86,18 +86,18 @@
 
 ---
 
-### 🛠️ Tech Stack
+### 🛠️ Tech Stack (Grounded in Repository Activity)
 
 <div align="center">
 
 | Category | Technologies |
 | :--- | :--- |
-| **Languages** | `Python` `TypeScript` `JavaScript` `C` `C++` `SQL` `HTML5` `CSS3` |
-| **Frontend** | `React` `Next.js` `Tailwind CSS` `Vite` `Redux` `Responsive Design` |
-| **Backend & APIs** | `Node.js` `Express.js` `FastAPI` `Hono` `RESTful APIs` `GraphQL` |
-| **Databases & ORM** | `PostgreSQL` `MongoDB` `Prisma ORM` `Supabase` `MySQL` `Redis` |
-| **AI & ML Tools** | `Google Gemini API` `OpenAI` `LangChain` `Document AI / OCR` `Prompt Eng` |
-| **DevOps & Cloud** | `Docker` `Git & GitHub` `GitHub Actions` `Vercel` `Postman` `Linux` |
+| **Languages** | `TypeScript` (49.0%) · `Python` (29.7%) · `JavaScript` (7.4%) · `HTML/CSS` (13.6%) · `SQL` |
+| **Frontend** | `React 18` · `Next.js` · `Tailwind CSS v4` · `Vite` · `Radix UI` · `Responsive UI` |
+| **Backend & APIs** | `Node.js` · `FastAPI` · `Hono` · `Express.js` · `RESTful APIs` |
+| **Databases & ORM** | `PostgreSQL` · `Prisma ORM` · `MongoDB` · `Supabase` |
+| **AI & Automation** | `Google Gemini API` · `Document AI & OCR` · `Autonomous Interventions` · `Prompt Eng` |
+| **DevOps & Cloud** | `Docker` · `Git & GitHub Actions` · `Vercel` · `Vite` · `Postman` |
 
 </div>
 
