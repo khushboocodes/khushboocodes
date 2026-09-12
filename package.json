@@ -1,0 +1,22 @@
+{
+  "name": "khushboocodes",
+  "version": "1.0.0",
+  "description": "Dynamic GitHub Profile with Cyberpunk ASCII Terminal Card & Animated Jet Heatmap",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "generate": "node generate.mjs",
+    "preview": "node preview-test.mjs",
+    "build:svg": "python build_svgs.py"
+  },
+  "keywords": [
+    "github-profile",
+    "svg-animation",
+    "jet-heatmap",
+    "ascii-art"
+  ],
+  "author": "Khushboo Khator",
+  "license": "MIT"
+}
