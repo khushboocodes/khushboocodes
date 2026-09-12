@@ -84,15 +84,6 @@
   </tr>
 </table>
 
----
-
-### 📊 GitHub Activity & Streak
-
-<div align="center">
-  <a href="https://github.com/khushboocodes">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=khushboocodes&theme=tokyonight&hide_border=true&background=0B1120&ring=7C3AED&fire=22D3EE&currStreakLabel=22D3EE" alt="GitHub Streak" />
-  </a>
-</div>
 
 ---
 
